@@ -5,3 +5,4 @@ version = "0.1.0"
 
 [dependencies]
 futures = "0.1"
+uarc-emu = {git = "https://github.com/uarc/uarc-emu", rev = "b3e79f7f20216c3331770eb360e0d9eac4056a39"}
