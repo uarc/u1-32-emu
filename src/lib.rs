@@ -2,6 +2,7 @@
 
 use std::ops::RangeInclusive;
 
+#[derive(Debug, Clone, Default)]
 struct BusState {
     /// Bus handler address
     handler: Vec<usize>,
@@ -11,11 +12,14 @@ struct BusState {
     set: bool,
 }
 
+#[derive(Debug, Clone, Default)]
 pub struct Core {
     /// Interrupt enable flag
     int_enable: bool,
     /// Default handler address
     handler: usize,
+    /// Program Counter
+    pc: usize,
 
     /// Data Stack (dstack)
     dstack: Vec<u32>,
