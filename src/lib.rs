@@ -4,7 +4,7 @@ use std::ops::RangeInclusive;
 
 struct BusState {
     /// Bus handler address
-    handler: Vec<u32>,
+    handler: Vec<usize>,
     /// Bus interrupt enable
     enabled: bool,
     /// Bus set
@@ -15,15 +15,15 @@ pub struct Core {
     /// Interrupt enable flag
     int_enable: bool,
     /// Default handler address
-    handler: u32,
+    handler: usize,
 
     /// Data Stack (dstack)
     dstack: Vec<u32>,
     /// Bus interrupt states (ifile)
-    ifile: Vec<u32>,
+    ifile: Vec<BusState>,
     /// Call Stack (cstack)
-    cstack: Vec<u32>,
+    cstack: Vec<usize>,
     /// Loop Stack (lstack)
-    lstack: Vec<RangeInclusive<u32>>,
+    lstack: Vec<RangeInclusive<usize>>,
 }
 
