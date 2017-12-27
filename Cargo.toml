@@ -1,8 +1,9 @@
 [package]
 authors = ["Geordon Worley <vadixidav@gmail.com>"]
-name = "u1-32-emu"
+name = "u1-x-emu"
 version = "0.1.0"
 
 [dependencies]
 futures = "0.1"
-uarc-emu = {git = "https://github.com/uarc/uarc-emu", rev = "b3e79f7f20216c3331770eb360e0d9eac4056a39"}
+num = "0.1"
+uarc-emu = {git = "https://github.com/uarc/uarc-emu", rev = "1afd09cd6fe05528259f2e912f596f88541858e9"}
