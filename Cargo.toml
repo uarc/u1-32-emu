@@ -2,8 +2,4 @@
 authors = ["Geordon Worley <vadixidav@gmail.com>"]
 name = "u1-x-emu"
 version = "0.1.0"
-
-[dependencies]
-futures = "0.1"
-num = "0.1"
-uarc-emu = {git = "https://github.com/uarc/uarc-emu", rev = "1afd09cd6fe05528259f2e912f596f88541858e9"}
+edition = "2018"
